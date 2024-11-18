@@ -8,11 +8,13 @@
     <title>Hidden Button</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="buttonsContainer">
       <h1>Hidden Button</h1>
-      <button id="0" type="button" class="btn btn-primary">1st Button</button>
-      <button id="1" type="button" class="btn btn-info">2nd Button</button>
-      <button id="2" type="button" class="btn btn-dark">3rd Button</button>
+      <form onsubmit="generateButtons()">
+        <label for="introducedNumber">Insert a number</label>
+        <input type="number" id="introducedNumber" name="introducedNumber" required><br><br>
+        <input type="submit" value="Generate Buttons">
+      </form>
     </div>
   <script src = "script.js"></script>
   </body>
